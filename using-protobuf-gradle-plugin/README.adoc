@@ -1,0 +1,36 @@
+= Using Protobuf Gradle Plugin
+
+== Introduction
+
+Inside this folder exists a simple project to exercise the ability of the gradle protobuf plugin. It is structured as a composite gradle build in the following way:
+
+=== plugin-conventions
+
+This gradle project encapsulates the conventions used to apply the protobuf gradle plugin, otherwise each gradle project would need to copy-paste the logic in each `build.gradle.kts` file.
+
+=== food-services
+
+This folder contains three service projects:
+
+==== commons
+
+A project with types not tied to a particular service, it exists to serve as a library to the other services.
+
+==== reference
+
+A service which provides reference information about ingredients for food.
+
+==== recipes
+
+A service which provides an API for retrieving recipes. For the sake of this example the recipes API will delegate calls to the reference API in order to include nutritional information.
+
+== The Goal
+
+This project intends to demonstrate how the gradle protobuf plugin can be used to:
+
+* Auto generate kotlin models, clients and servers from proto files
+* Depend on the generated code between modules so thatL
+    * Commons models are available in both recipe and reference
+    * Reference models and client are available in recipe
+* Depend on proto file definitions between modules such that
+    * Protobuf types in commons auto complete in proto files for other services

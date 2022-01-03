@@ -1,0 +1,11 @@
+# Project exclude paths
+/.gradle/
+/using-protobuf-gradle-plugin/food-services/common/.gradle/
+/using-protobuf-gradle-plugin/food-services/common/build/
+/using-protobuf-gradle-plugin/food-services/common/build/classes/java/main/
+/using-protobuf-gradle-plugin/food-services/recipe/.gradle/
+/using-protobuf-gradle-plugin/food-services/recipe/build/
+/using-protobuf-gradle-plugin/food-services/recipe/build/classes/java/main/
+/using-protobuf-gradle-plugin/food-services/reference/.gradle/
+/using-protobuf-gradle-plugin/plugin-conventions/.gradle/
+/using-protobuf-gradle-plugin/plugin-conventions/build/

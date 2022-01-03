@@ -1,0 +1,5 @@
+= GRPC Playground
+
+== Introduction
+
+This repository serves as a playground for using GRPC.
